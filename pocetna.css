@@ -1,0 +1,98 @@
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column-1 {
+  float: left;
+  width: 100%;
+  text-align: left;
+  background-color: white;
+}
+.column-2 {
+  float: left;
+  width: 50%;
+}
+.main {
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 25% 50% 25%;
+}
+
+.row-margins-20 {
+	margin: 0px 20px 0px 20px;
+}
+
+ul.horizontal-ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333333;
+}
+
+li.horizontal-li {
+  float: left;
+}
+
+li.horizontal-li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111111;
+}
+
+.banner {
+  padding: 1.5% 0px 1.5% 0px;
+}
+.banner-text {
+  text-align: center;
+}
+.menu {
+  text-align: center;
+}
+
+.predmeti {
+  background-color:silver;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  background-color: silver;
+  margin-top: 40px;
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  text-align: center;
+}
+.yellow {
+  padding: 5% 0 0 0;
+}
+#naslov {
+  text-align: left;
+  padding: 0 0 0% 0;
+}
+#prvi {
+  list-style-image: url("resize.png");
+  height: 20%;
+}
+#drugi {
+  list-style-image: url("komp.png");
+}
+ul {
+  list-style-type: circle;
+}
+.slika>img{
+margin: auto;
+padding: auto;
+width: 600px;
+margin-left: 40px;
+margin-right: 30px;
+}
