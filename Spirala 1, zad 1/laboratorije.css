@@ -1,0 +1,134 @@
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column-1 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+  }
+  .column-2 {
+    float: left;
+    width: 50%;
+  }
+  .main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+  
+  .row-margins-20 {
+      margin: 0px 20px 0px 20px;
+  }
+  
+  ul.horizontal-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li.horizontal-li {
+    float: left;
+  }
+  
+  li.horizontal-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  
+  .banner {
+    padding: 1.5% 0px 1.5% 0px;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+  }
+  
+  .predmeti {
+    background-color:silver;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+    margin-top: 15px;
+    
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  #naslov {
+    text-align: left;
+    padding: 0 0 0% 0;
+  }
+
+.prvilab {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 53% 20% 20%;
+    text-align: center;
+    grid-gap: 5px;
+    padding: 0 20% 0 20%;
+    margin-top: 5%;
+}
+
+.prvas {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: whitesmoke;
+}
+.oprema {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: whitesmoke;
+    float: left;
+}
+.drugas {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    background-color: whitesmoke;
+}
+.prvag {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    background-color: whitesmoke;
+}
+.drugag {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    background-color: whitesmoke;
+}
+
+.opist {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    background-color: whitesmoke;
+}

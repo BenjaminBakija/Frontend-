@@ -1,0 +1,184 @@
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .column-1 {
+    float: left;
+    width: 100%;
+    text-align: left;
+    background-color: white;
+  }
+  .column-2 {
+    float: left;
+    width: 50%;
+  }
+  .main {
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+  }
+  
+  .row-margins-20 {
+      margin: 0px 20px 0px 20px;
+  }
+  
+  ul.horizontal-ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+  }
+  
+  li.horizontal-li {
+    float: left;
+  }
+  
+  li.horizontal-li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111111;
+  }
+  
+  .banner {
+    padding: 1.5% 0px 1.5% 0px;
+  }
+  .banner-text {
+    text-align: center;
+  }
+  .menu {
+    text-align: center;
+  }
+  
+  .predmeti {
+    background-color:silver;
+  }
+  footer {
+    display: flex;
+    justify-content: center;
+    background-color: silver;
+    margin-top: 15px;
+    
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 {
+    text-align: center;
+  }
+  #naslov {
+    text-align: left;
+    padding: 0 0 0% 0;
+  }
+
+  .lista-predmeta {
+    font-family: Aspergit;
+    font-weight: 900;
+    text-align: center;
+    color: seashell;
+    
+  }
+
+  .predmet-grid {
+      
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-rows: 50% fit-content(40%) fit-content(20%);
+      text-align: center;
+      padding: 3% 25% 3% 25%;
+      font-family: Aspergit;
+      font-weight: 900;
+      grid-gap: 10px;
+  }
+
+  #naslov-predmeta {
+      font-size: 25px;
+  }
+  .naslov {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 2;
+  }
+
+  .profe {
+    grid-column-start: 3;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+
+.broj-vpt {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.lista-tema{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3; 
+}
+.opis{
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+
+
+#brojevi {
+    font-weight: 550;
+    font-size: 23px;
+}
+#tp {
+    background-color: whitesmoke;
+    margin-top: 1cm;
+}
+#mur {
+    background-color: silver;
+    margin-top: 1cm;
+    padding-bottom: 1.5cm;
+}
+#fwt {
+    background-color: whitesmoke;
+    padding-bottom: 1.5cm;
+}
+#or {
+    background-color: silver;
+    padding-bottom: 1.5cm;
+    margin-top: 1cm;
+}
+#ubp {
+    background-color: whitesmoke;
+    padding-bottom: 1.5cm;
+    margin-top: 1cm;
+}
+#rp {
+    background-color: silver;
+    padding-bottom: 1.5cm;
+    margin-top: 1cm;
+}
+#vvs {
+    background-color: whitesmoke;
+    padding-bottom: 1.5cm;
+    margin-top: 1cm;
+}
+#pjp {
+    background-color: silver;
+    padding-bottom: 1.5cm;
+    margin-top: 1cm;
+}
+#icr {
+    background-color: whitesmoke;
+    padding-bottom: 1.5cm;
+    margin-top: 1cm;
+}

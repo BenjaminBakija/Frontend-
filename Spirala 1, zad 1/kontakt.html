@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" type="text/css" href="kontakt.css">
+<style>body{
+        background-image: url(slike/slika.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+          background-size: cover;
+        }
+</style>
+    <body>
+        <header>
+            <div class="row">
+                    <div class="column-1 green banner">
+                        <img src="slike/etf.png" alt="Logo etf-a" style="height: 5%; width: 5%; padding: 0 3% 0 3%; float: left;">
+                        <div class="banner-text"></div>
+                            <h1 id="naslov">Razvoj softvera</h1>
+                        </div>
+                </div>
+
+                <div class="row">
+                        <div class="column-1 menu">
+                            <ul class="horizontal-ul">
+                                <li class="horizontal-li"><a href="pocetna.html">POCETNA</a></li>
+                                <li class="horizontal-li"><a href="kontakt.html">KONTAKT</a></li>
+                                <li class="horizontal-li"><a href="godine.html">GODINE</a></li>
+                                <li class="horizontal-li"><a href="osoblje.html">OSOBLJE</a></li>
+                                <li class="horizontal-li"><a href="laboratorije.html">LABORATORIJE</a></li>
+                                <li class="horizontal-li"><a href="predmeti.html">PREDMETI</a></li>
+                            </ul>
+                        </div>
+                    </div>
+        </header>
+
+         <main>
+            <form>
+                Ime i prezime:
+                <input type="text"  placeholder="Vase ime">
+            </br>
+        </br>
+                Email:
+                <input type="email" placeholder="@etf.unsa.ba">
+        </br>
+    </br>
+                Predmet: 
+                <select>
+                        <option value="upit">upit</option>
+                        <option value="komentar">komentar</option>
+                        <option value="zahtjev">zahtjev</option>
+                        <option value="ostalo">ostalo</option>
+                      </select>
+                    </br>
+                </br>
+                    Polaznik:
+                    <input type="radio" name="da" value="da">da
+                    <input type="radio" name="ne" value="ne">ne
+                </br>
+            </br>Tekst:  
+         <textarea rows="1" cols="50" placeholder="Unesite Vas komentar..."></textarea>
+                    </br>
+                </br>Dodatak:   
+                    <input type="file" name="file">
+                </br>
+            </br>
+                <input type="button" value="Posalji">
+            </form>
+
+         </main>
+
+
+        <footer>
+                <div >
+                        <footer><i>Elektrotehnicki fakultet Sarajevo &nbsp; &nbsp; &nbsp; Razvoj Softvera &nbsp; &nbsp; &nbsp; <a href="http://www.etf.unsa.ba">Web stranica</a></i></footer>
+                </div>
+        </footer>
+    </body>
+</html>
