@@ -1,7 +1,12 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="osoblje.css">
-
+<head>
+  <script
+src="https://code.jquery.com/jquery-3.4.1.js"
+integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+crossorigin="anonymous"></script>
+</head>
 <style>body{
 background-image: url(slike/slika.jpg);
 background-repeat: no-repeat;
@@ -13,7 +18,7 @@ background-attachment: fixed;
 	<body>			
 		<div class="row">
 			<div class="column-1 green banner">
-				<img src="slike/etf.png" alt="Logo etf-a" style="height: 5%; width: 5%; padding: 0 3% 0 3%; float: left;">
+				<img id="log" src="slike/etf.png" alt="Logo etf-a" style="height: 5%; width: 5%; padding: 0 3% 0 3%; float: left;">
 				<div class="banner-text"></div>
 					<h1 id="naslov">Razvoj softvera</h1>
 				</div>
@@ -35,17 +40,25 @@ background-attachment: fixed;
 
 <h2>Profesori</h2>
         <div class="okvir">
-        <div class="profa">
-                <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
-                <div class="Ime">Zeljko Juric</div>
+            <div >     
+        <div class="profa" >
+          <div>
+
+            <img class="slika" src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;" style="padding-bottom: 15px;" >
+          </div>
+          <div class="Ime">Zeljko Juric</div>
                 <div class="Titula">Red.Prof.Dr</div>
                 <div class="Kabinet">Kabinet</div>
                 <a href="predmeti.html#mur"><i>MUR</i></a>
                 <a href="predmeti.html#tp"><i>TP</i></a>
               </div>
 
+              </div>
+
               <div class="profa">
-                    <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;" style="padding-bottom: 15px;">
+                <div>
+                  <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;" style="padding-bottom: 15px;">
+                </div>
                     <div class="Ime">Vedran Ljubovic</div>
                     <div class="Titula">Doc.Dr.</div>
                     <div class="Kabinet">Kabinet</div>
@@ -53,7 +66,9 @@ background-attachment: fixed;
                   </div>
 
                   <div class="profa">
-                        <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                    <div>
+                      <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                    </div>
                         <div class="Ime">Emir Buza</div>    
                         <div class="Titula">Doc.Dr.</div>
                         <div class="Kabinet">Kabinet</div>
@@ -62,7 +77,9 @@ background-attachment: fixed;
                       </div>
 
                       <div class="profa">
-                            <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                        <div>
+                          <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                        </div>
                             <div class="Ime">Amila Akagic</div>    
                             <div class="Titula">Doc.Dr.</div>
                             <div class="Kabinet">Kabinet</div>
@@ -70,7 +87,9 @@ background-attachment: fixed;
                           </div>
 
                           <div class="profa">
-                                <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                            <div>
+                              <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                            </div>
                                 <div class="Ime">Vensada Okanovic</div>    
                                 <div class="Titula">Van.Prof.Dr.</div>
                                 <div class="Kabinet">Kabinet</div>
@@ -78,7 +97,9 @@ background-attachment: fixed;
                               </div>
 
                               <div class="profa">
-                                    <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                <div>
+                                  <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                </div>
                                     <div class="Ime">Dzenana Dzonko</div>    
                                     <div class="Titula">Prof.Dr.</div>
                                     <div class="Kabinet">Kabinet</div>
@@ -86,7 +107,9 @@ background-attachment: fixed;
                                   </div>
 
                                   <div class="profa">
-                                        <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                    <div>
+                                      <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                    </div>
                                         <div class="Ime">Samir Ribic</div>    
                                         <div class="Titula">Van.Prof.Dr.</div>
                                         <div class="Kabinet">Kabinet</div>
@@ -94,7 +117,9 @@ background-attachment: fixed;
                                       </div>
 
                                       <div class="profa">
-                                            <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                        <div>
+                                          <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                        </div>
                                             <div class="Ime">Dusanka Boskovic</div>    
                                             <div class="Titula">Van.Prof.Dr.</div>
                                             <div class="Kabinet">Kabinet</div>
@@ -105,49 +130,61 @@ background-attachment: fixed;
 <h2>Asistenti</h2>
 <div class="okviras">
         <div class="asistent">
-                <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+          <div>
+            <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+          </div>
                 <div class="Ime">Hana Bezdrob</div>    
                 <div class="Kabinet">Kabinet</div>
                 <a href="predmeti.html#mur"><i">MUR</i></a>
               </div>
             
               <div class="asistent">
-                    <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                <div>
+                  <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                </div>
                     <div class="Ime">Mirza Mesihovic</div>    
                     <div class="Kabinet">Kabinet</div>
                     <a href="predmeti.html#or"><i>OR</i></a>
                   </div>
 
                   <div class="asistent">
-                        <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                    <div>
+                      <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                    </div>
                         <div class="Ime">Emir Cogo</div>    
                         <div class="Kabinet">Kabinet</div>
                         <a href="predmeti.html#ubp"><i>UBP</i></a>
                       </div>
 
                       <div class="asistent">
-                            <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                        <div>
+                          <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                        </div>
                             <div class="Ime">Jasmina Husic</div>    
                             <div class="Kabinet">Kabinet</div>
                             <a href="predmeti.html#or"><i>OR</i></a>
                           </div>
                           
                           <div class="asistent">
-                                <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                            <div>
+                              <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                            </div>
                                 <div class="Ime">Irfan Prazina</div>    
                                 <div class="Kabinet">Kabinet</div>
                                 <a href="predmeti.html#fwt"><i>FWT</i></a>
                               </div>
 
                               <div class="asistent">
-                                    <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                <div>
+                                  <img src="slike/image.png" alt="Profesor" style="width:108px; height: 192px;">
+                                </div>
                                     <div class="Ime">Kenan Halilovic</div>    
                                     <div class="Kabinet">Kabinet</div>
                                     <a href="#TP"><i">OIS</i></a>
                                   </div>
 
 </div>
-
+<script src="skripta.js"></script>
 </body>
 			<div>
 					<footer><i>Elektrotehnicki fakultet Sarajevo &nbsp; &nbsp; &nbsp; Razvoj Softvera &nbsp; &nbsp; &nbsp; <a href="http://www.etf.unsa.ba">Web stranica</a></i></footer>

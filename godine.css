@@ -113,3 +113,19 @@
     display: inline-table;
     border:  1px dotted black;
 }
+.Tutorijal {
+    background-color: skyblue;
+    color: darkblue;
+}
+.Vjezbe {
+    background-color: lightgreen;
+    color: darkgreen;
+}
+.Predavanja {
+    background-color: lightgoldenrodyellow;
+    color:darkorange;
+}
+.Kombinacija {
+    background-color:silver;
+    color: black;
+}
