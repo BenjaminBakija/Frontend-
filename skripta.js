@@ -23,19 +23,7 @@ function() {
 
 
 
-//Zadatak 4
-function mouseOver(a) {
-    var x= document.getElementsByClassName(a);
-    for(var i=0;i<x.length;i++){
-      x[i].style.backgroundColor="yellow";
-    }
-  }
-  function mouseOut(a) {
-    var x= document.getElementsByClassName(a);
-    for(var i=0;i<x.length;i++){
-      x[i].style.backgroundColor="white";
-    }
-  }
+
 
 
 //Zadatak 2

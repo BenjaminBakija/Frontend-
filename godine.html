@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <link rel="stylesheet" type="text/css" href="godine.css">
-
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 <style>body{
 background-image: url(slike/slika.jpg);
 background-repeat: no-repeat;
@@ -11,15 +12,15 @@ background-attachment: fixed;
 </style>
 
 	<body>			
-		<div class="row">
+		<div class="rows">
 			<div class="column-1 green banner">
-				<img src="slike/etf.png" alt="Logo etf-a" style="height: 5%; width: 5%; padding: 0 3% 0 3%; float: left;">
+				<img src="slike/etf.png" alt="Logo etf-a" style="height: 60px; width: 150px; padding: 0 3% 0 3%; float: left;">
 				<div class="banner-text"></div>
 					<h1 id="naslov">Razvoj softvera</h1>
 				</div>
 		</div>
 
-		<div class="row">
+		<div class="rows">
 			<div class="column-1 menu">
 				<ul class="horizontal-ul">
 					<li class="horizontal-li"><a href="pocetna.html">POCETNA</a></li>
@@ -31,13 +32,32 @@ background-attachment: fixed;
 				</ul>
 			</div>
         </div>
-    <div class="row">
+        <script src="godine.js"></script>
+        <script src="pretraga.js"></script>
+
+        <form id="pretraga">
+            <div class="form-group col-3">
+              <label>Pretraga predmeta: </label>
+              <input name="Predmet" type="text" class="form-control"  placeholder="Unesite pretragu predmeta">
+            </div>
+            <div class="form-group col-3">
+                <label>Pretraga profesora: </label>
+                <input name="Profesor" type="text" class="form-control" placeholder="Unesite pretragu profesora">
+              </div>
+              <div class="form-group col-3">
+                <label>Pretraga godine: </label>
+                <input name="Godine" type="text" class="form-control" placeholder="Unesite pretragu godine">
+              </div> 
+          </form>
+ 
+          <button class="myButton" onclick="postaviElemente()" class="btn btn-primary">Pretraži</button>
+    <div class="rows">
         <div class="column-2 tabelaleft">
             <table id="tabela1" border="1" style="width:100%">
-                <tr class="prva">
+                <tr id="skip" class="prva">
                     <th colspan="3">Prva godina</th>
                 </tr>
-                <tr class="prva">
+                <tr id="skip" class="prva">
                     <th>Naziv predmeta</th>
                     <th>Opis</th>
                     <th>Profesor</th>
@@ -73,10 +93,10 @@ background-attachment: fixed;
                 onmouseout="mouseOut('juric')">Red.Prof.Dr Zeljko Juric</td>
             </tr>
 
-            <tr class="prva">
+            <tr id="skip" class="prva">
                     <th colspan="3">Druga godina</th>
                 </tr>
-                <tr class="prva">
+                <tr id="skip" class="prva">
                         <th>Naziv predmeta</th>
                         <th>Opis</th>
                         <th>Profesor</th>
@@ -301,7 +321,7 @@ background-attachment: fixed;
                 </table>
             </div>
     </div>
-<script src="skripta.js"></script>
+
         
                 <div >
                         <footer><i>Elektrotehnicki fakultet Sarajevo &nbsp; &nbsp; &nbsp; Razvoj Softvera &nbsp; &nbsp; &nbsp; <a href="http://www.etf.unsa.ba">Web stranica</a></i></footer>
